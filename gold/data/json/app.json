@@ -1,13 +1,53 @@
 [
     {
-        "appnum": "11",
-        "apptitle": "plant store",
-        "appser": "20210303",
-        "appdes": " text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-        "appmain": "app_main_003.png",
-        "appthumb": "app_003.png",
-        "appclient": "floria",
-        "appreg": "2021-01-19"
+        "appnum": "16",
+        "apptitle": "MEdicine Reminder",
+        "appser": "20210120",
+        "appdes": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, <br \/>\r\n<br \/>\r\nto generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "appmain": "app_main_008.jpg",
+        "appthumb": "app_008.jpg",
+        "appclient": "WEEK",
+        "appreg": "2021-01-20"
+    },
+    {
+        "appnum": "15",
+        "apptitle": "Dimest",
+        "appser": "20210120",
+        "appdes": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+        "appmain": "app_main_007.png",
+        "appthumb": "app_007.png",
+        "appclient": "VISA",
+        "appreg": "2021-01-20"
+    },
+    {
+        "appnum": "14",
+        "apptitle": "Plant",
+        "appser": "20210120",
+        "appdes": "first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "appmain": "app_main_006.png",
+        "appthumb": "app_006.png",
+        "appclient": "Plantworld",
+        "appreg": "2021-01-20"
+    },
+    {
+        "appnum": "13",
+        "apptitle": "Jenny Mazursky",
+        "appser": "20210120",
+        "appdes": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,<br \/>\r\n<br \/>\r\n you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks ",
+        "appmain": "app_main_005.png",
+        "appthumb": "app_005.png",
+        "appclient": "SKY",
+        "appreg": "2021-01-20"
+    },
+    {
+        "appnum": "12",
+        "apptitle": "MitChell Barber",
+        "appser": "20210120",
+        "appdes": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, <br \/>\r\n<br \/>\r\nlooked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicer",
+        "appmain": "app_main_004.png",
+        "appthumb": "app_004.png",
+        "appclient": "MitChell",
+        "appreg": "2021-01-20"
     },
     {
         "appnum": "10",
