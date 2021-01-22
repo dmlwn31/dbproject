@@ -7,6 +7,10 @@
 7. web page js load more 기능 리펙토링
 8. index.php 파일 fasion 위치 클래스 이름 변경
 9. resize 함수 한번만 실행 기능
+10. 앱 데이터 베이스 메인 사진 2장 추가 테이블 컬럼수정
+11. 앱 상품 입력 페이지 메인 사진 2장 추가 업로드 화면 제작
+12. 앱 데이터 베이스 구글 플레이, 앱스토어 주소 테이블 컬럼 추가 
+13. 앱 데이터 베이스 구글 플레이, 앱스토어 주소 입력 화면 추가 제작 
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
 
