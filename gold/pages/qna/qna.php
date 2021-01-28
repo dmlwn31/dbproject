@@ -46,8 +46,8 @@
           <div class="qnaBoxes deWeBoxes">
             <div class="qnaTable">
               <ul class="qnaList">
-              
-            <!-- afax code inside here -->
+                
+              <!-- ajax code inside here -->
 
               </ul>
             </div>
@@ -69,15 +69,15 @@
                 <span class="prevPg" onclick="goPrev()"><i class="fa fa-angle-left"></i></span>
 
                 <?php
-                 //database connect
+                //database connect
                 include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
                 $sql="select * from gold_qna order by GOLD_QNA_num desc";
-                
-                $paging_result = mysqli_query($dbConn, $sql);
-                $total_record = mysqli_num_rows($paging_result);
+
+                $paging_result=mysqli_query($dbConn, $sql);
+                $total_record=mysqli_num_rows($paging_result);
                 $scale=5;
 
-                if($total_record % $scale == 0 ){
+                if($total_record % $scale == 0){
                   $total_page=floor($total_record/$scale);
                 } else {
                   $total_page=floor($total_record/$scale) + 1;
@@ -104,16 +104,15 @@
                 <?php
                 if($userid==''){
                 ?>
-                 <span><a href="/gold/pages/login/login_form.php">로그인</a></span>
+                <span><a href="/gold/pages/login/login_form.php">로그인</a></span>
                 <?php
                 } else {
                 ?>
-                <span><?=$suerid?></span>
+                <span><?=$userid?></span>
                 <?php
                 }
                 ?>
                 
-                <!-- <span><a href="#">로그인</a></span> -->
               </div>
               <form action="/gold/php_process/pages/qna_insert.php?id=<?=$userid?>" method="post" class="writeForm" name="writeForm">
                 <p class="qnaTitInput">
@@ -127,8 +126,8 @@
               <?php
               if($userid==''){
               ?>
-                <button type="submit" conclick="plzLogin()">등록</button>
-              <?PHP
+              <button type="submit" onclick="plzLogin()">등록</button>
+              <?php
               } else {
               ?>
               <button type="submit" class="qnaSubmit">등록</button>
@@ -153,12 +152,11 @@
     <script src="/gold/js/web_design_page.js"></script>
     <script src="/gold/js/qna_ajax.js"></script>
     <script>
-      const qnaSubmit = document.querySelector(".qnaSubmit");      
+      const qnaSubmit = document.querySelector(".qnaSubmit");
       qnaSubmit.addEventListener('click', insertQan);
 
-
       function plzLogin(){
-        alert('글쓰기를 하시려면 로그인이 필요합니다.')
+        alert('글쓰기를 하시려면 로그인이 필요합니다.');
       }
 
       function insertQan(){
@@ -176,6 +174,8 @@
 
         document.writeForm.submit();
       }
+
+      
     </script>
   </body>
 </html>
