@@ -53,7 +53,7 @@ if(isset($_SESSION["userlevel"])){
 
           <a href="/gold/php_process/login/logout.php">LOGOUT</a>
           <a href="#"><?=$userid?>[<?=$userpoint?>]</a>
-          <a href="#">ADMIN</a>
+          <a href="/gold/pages/admin/admin.php">ADMIN</a>
 
           <?php
             } else {
