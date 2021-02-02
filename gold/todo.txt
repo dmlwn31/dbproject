@@ -18,5 +18,6 @@
 17. 조회수 증가
 18. 글확인 <br> 출력 제작
 #19. 상세페이지 recent sevices 320px 반응형 제작 
+20. 포인트 증가 기능 추가 
 
 include $_SERVER['DOCUMENT_ROOT'].'/gold/php_process/connect/db_connect.php';
