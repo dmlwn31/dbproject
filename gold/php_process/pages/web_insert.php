@@ -112,7 +112,7 @@
 
   echo "
     <script>
-      location.href='/gold/pages/web/web.php';
+    location.href='/gold/pages/web/web.php';
     </script>
   ";
 ?>

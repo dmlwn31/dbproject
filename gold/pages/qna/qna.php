@@ -63,14 +63,14 @@
                   <input type="text" name="qnaSearchInput" placeholder="검색어를 입력해 주세요" class="qnaSearchInput">
                   <button type="button" class="qnaSearchBtn"><i class="fa fa-search" onclick="search_check()"></i></button>
                   <script>
-                  function search_check(){
-                    if(!document.qnaSearch.qnaSearchInput.value){
-                      alert('검색어를 입력해 주세요.');
-                      document.qnaSearch.qnaSearchInput.focus();
-                      return;
+                    function search_check(){
+                      if(!document.qnaSearch.qnaSearchInput.value){
+                        alert('검색어를 입력해 주세요.');
+                        document.qnaSearch.qnaSearchInput.focus();
+                        return;
+                      }
+                      document.qnaSearch.submit();
                     }
-                    document.qnaSearch.submit();
-                  }
                   </script>
                 </form>
               </div>

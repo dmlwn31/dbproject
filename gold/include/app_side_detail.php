@@ -1,4 +1,4 @@
-<div class="detailApp">
+            <div class="detailApp">
               <div class="appTit">
                 <h2>Recent App Services</h2>
                 <a href="/gold/pages/app/app.php">View All</a>
@@ -24,14 +24,12 @@
                 <div class="subAppTxt">
                   <a href="/gold/pages/app/app_detail.php?num=<?=$app_side_num?>"><?=$app_side_tit?></a>
                   <em><?=$app_side_des?></em>
-                </div>
+                </div> 
               </div>
-
-                <?php
-                }
-                ?>
-            
               <!-- end of looped app links -->
-            
+
+              <?php
+              }
+              ?>
             </div>
             <!-- end of detail app -->

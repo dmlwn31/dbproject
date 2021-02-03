@@ -39,10 +39,9 @@ CREATE TABLE `gold_ans` (
 --
 
 INSERT INTO `gold_ans` (`GOLD_ANS_num`, `GOLD_ANS_QNA_num`, `GOLD_ANS_con`, `GOLD_ANS_reg`) VALUES
-(1, 15, 'ㄴㄴ', '2021-01-28'),
-(3, 9, 'ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ', '2021-01-28'),
-(5, 16, 'ㅁㄴㅇㄹ', '2021-01-28'),
-(6, 16, '답글입니다', '2021-01-28');
+(1, 12, 'ans_con', '2021-01-28'),
+(3, 13, '첫 개시글 답변 입니다.', '2021-01-28'),
+(4, 9, '9번 답변 완료', '2021-01-28');
 
 --
 -- 덤프된 테이블의 인덱스
@@ -62,7 +61,7 @@ ALTER TABLE `gold_ans`
 -- 테이블의 AUTO_INCREMENT `gold_ans`
 --
 ALTER TABLE `gold_ans`
-  MODIFY `GOLD_ANS_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호', AUTO_INCREMENT=8;
+  MODIFY `GOLD_ANS_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호', AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -96,54 +96,54 @@
               ?>
             </div>
             <!-- end of write box -->
+            
+            <?php
+            $ans_num = $_GET['num'];
+            //database connect
+            include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
+            $sql="select * from gold_ans where GOLD_ANS_QNA_num=$ans_num order by GOLD_ANS_num desc";
 
-           <?php
-           $ans_num = $_GET['num'];
-          //database connect
-          include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
-          $sql="select * from gold_ans where GOLD_ANS_QNA_num=$ans_num order by GOLD_ANS_num desc";
+            $rep_result=mysqli_query($dbConn, $sql);
+            
+            
+            while($rep_row=mysqli_fetch_array($rep_result)){
+              $rep_con=$rep_row['GOLD_ANS_con'];
+              $rep_ans_num=$rep_row['GOLD_ANS_num'];
+            ?>
 
-          $rep_result=mysqli_query($dbConn, $sql);
-          
+            <div class="ansResult">
+              <p class="adminId">
+                <b>관리자 답변</b>
+                <?php
+                if($userlevel == 1){
+                ?>
+                <a href="/gold/php_process/pages/ans_delete.php?num=<?=$rep_ans_num?>" class="ansDeleteBtn">삭제</a>
+                <?php
+                }
+                ?>
+              </p>
+              <p class="ansResultTxt"><?=$rep_con?></p>       
+            </div>
 
-          while($rep_row=mysqli_fetch_array($rep_result)){
-           $rep_con=$rep_row['GOLD_ANS_con'];
-           $rep_ans_num=$rep_row['GOLD_ANS_num'];
-          ?>
-
-           <div class="ansResult">
-             <p class="adminId">
-               <b> 관리자 답변</b>
-               <?php
-               if($userlevel == 1){
-               ?>
-               <a href="/gold/php_process/pages/ans_delete.php?num=<?=$rep_ans_num?>" class="ansDeleteBtn">삭제</a>
-               <?php
-               }
-               ?>
-             </p>
-             <p class="ansResultTxt"><?=$rep_con?></p>
-           </div>
-
-           <?php
+            <?php
             }
-           ?>
+            ?>
 
             <div class="answerBox">
               <form action="/gold/php_process/pages/ans_insert.php?num=<?=$ans_num?>" method="post" name="ansInputForm" class="ansInputForm">
                 <textarea name="ansInputTxt" placeholder="답글을 작성해 주세요."></textarea>
                 <p class="ansBtnBox">
-                  <?php
+                <?php
                 if($userid==''){
-              ?>
-               <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
-              <?php
-              } else {
-              ?>       
-              <button type="button" class="ansBtn" onclick="reply()">답글달기</button>
-              <?php
-              }
-              ?>
+                ?>
+                <button type="button" class="ansBtn" onclick="plzLogin()">답글달기</button>
+                <?php
+                } else {
+                ?>       
+                <button type="button" class="ansBtn" onclick="reply()">답글달기</button>
+                <?php
+                }
+                ?>
                 </p>     
               </form>
             </div>
@@ -171,6 +171,7 @@
       }
 
       function ansUpdate(){
+
         if(!document.ansForm.ansTitle.value){
           alert("제목을 입력해 주세요.");
           document.ansForm.ansTitle.focus();
@@ -189,7 +190,7 @@
       function reply(){
         if(!document.ansInputForm.ansInputTxt.value){
           alert("내용을 입력해 주세요.");
-          document.ansForm.ansInputTxt.focus();
+          document.ansInputForm.ansInputTxt.focus();
           return false;
         }
 

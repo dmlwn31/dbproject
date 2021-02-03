@@ -41,20 +41,19 @@ CREATE TABLE `gold_qna` (
 --
 
 INSERT INTO `gold_qna` (`GOLD_QNA_num`, `GOLD_QNA_id`, `GOLD_QNA_tit`, `GOLD_QNA_con`, `GOLD_QNA_reg`, `GOLD_QNA_hit`) VALUES
-(3, 'dmlwn31', 'aa', 'aabb', '2021-01-25', 1),
-(4, 'dmlwn31', 'aa', 'aa', '2021-01-25', 0),
-(5, 'dmlwn31', 'bb', 'bb', '2021-01-25', 0),
-(6, 'dmlwn31', 'cc', 'cc', '2021-01-25', 0),
-(7, 'dmlwn31', 'dd', 'dd', '2021-01-25', 0),
-(8, 'dmlwn31', 'ee', 'ee', '2021-01-25', 0),
-(9, 'dmlwn31', 'ff', 'ff', '2021-01-25', 1),
-(10, 'dmlwn31', 'gg', 'gg', '2021-01-25', 0),
-(11, 'dmlwn31', 'hh', 'hh', '2021-01-25', 0),
-(12, 'dmlwn31', 'ii', 'ii', '2021-01-25', 0),
-(13, 'dmlwn31', 'jj', 'jj', '2021-01-25', 0),
-(14, 'dmlwn31', 'kk', 'kk', '2021-01-25', 3),
-(15, 'dmlwn31', 'asdf', 'asdf', '2021-01-26', 52),
-(16, 'dmlwn31', '첫번째 게시글 입니다', '동해물 과 백두산이 마르고 닳도록 하느님이 보우 하사 우리나라 만세  무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 <br />\r\n동해물 과 백두산이 마르고 닳도록 하느님이 보우 하사 우리나라 만세  무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 동해물 과 백두산이 마르고 닳도록 하느님이 보우 하사 우리나라 만세  무궁화 삼천리 화려 강산 대한 사람 대한으로 길이 보전하세 ', '2021-01-26', 60);
+(1, 'marshall36', 'aa', 'bb', '2021-01-25', 0),
+(2, 'marshall36', 'bb', 'bb', '2021-01-25', 0),
+(3, 'marshall36', 'cc', 'cc', '2021-01-25', 0),
+(4, 'marshall36', 'dd', 'dd', '2021-01-25', 0),
+(5, 'marshall36', 'ee', 'ee', '2021-01-25', 0),
+(6, 'marshall36', 'ff', 'ff', '2021-01-25', 0),
+(7, 'marshall36', 'gg', 'gg', '2021-01-25', 0),
+(8, 'marshall36', 'hh', 'hh', '2021-01-25', 0),
+(9, 'marshall36', 'ii', 'ii', '2021-01-25', 2),
+(10, 'marshall36', 'jj', 'jj', '2021-01-25', 0),
+(11, 'marshall36', 'sdfg', 'ssdfg', '2021-01-28', 3),
+(12, 'marshall36', 'as', 'as', '2021-01-28', 70),
+(13, 'marshall36', '첫 번째 게시글 입니다.', '중국 외교부에 따르면 시 주석은 25일(현지시간) 세계경제포럼(WEF·다보스 포럼) 사전 화상회의에 참석해 한 연설에서 다자주의를 역설하며 강한 어조로 신냉전은 모두의 이익에 반한다고 주장했다.<br />\r\n<br />\r\n시 주석은 \"다자주의는 협의를 통해 국제 문제를 다루고 모두가 협력해 세계의 미래를 결정하는 것\"이라면서 \"작은 집단을 구축하거나 신냉전을 시작하며 다른 이들을 거부·위협하고, 고의적으로 디커플링(탈동조화)를 도입하며 와해와 제재를 추진하며, 고립과 소외를 조성한다면 세계를 분열과 대립으로 몰아갈 뿐\"이라고 말했다.', '2021-01-26', 71);
 
 --
 -- 덤프된 테이블의 인덱스
@@ -74,7 +73,7 @@ ALTER TABLE `gold_qna`
 -- 테이블의 AUTO_INCREMENT `gold_qna`
 --
 ALTER TABLE `gold_qna`
-  MODIFY `GOLD_QNA_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호', AUTO_INCREMENT=17;
+  MODIFY `GOLD_QNA_num` int(11) NOT NULL AUTO_INCREMENT COMMENT '고유번호', AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

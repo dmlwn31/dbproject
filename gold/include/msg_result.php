@@ -1,7 +1,7 @@
 <div class="qnaBoxes admin deWeBoxes">
             <div class="adminTable">
               <ul class="adminList">
-
+                
                 <li class="adminTitle clear">
                   <span class="msgNum">번호</span>
                   <span class="msgId">아이디</span>

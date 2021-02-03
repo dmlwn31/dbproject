@@ -40,7 +40,7 @@
           </div>
           <!-- end of contact title -->
 
-          <!-- design input contents form -->
+          <!-- app input contents form -->
           <div class="designInputFrom webDesignInput">
             <form action="/gold/php_process/pages/app_insert.php" method="post" name="app_form" enctype="multipart/form-data">
               <div class="titleSer clear">
@@ -58,8 +58,8 @@
                 </p>
               </div>
               <!-- end of title, serial, client input  -->
-              <div class="design_app uploadDesc">
-                <textarea name="app_desc" placeholder="App Description Here..."></textarea>
+              <div class="app_desc uploadDesc">
+                <textarea name="app_desc" placeholder="Design Description Here..."></textarea>
               </div>
               <!-- end of text description -->
               <div class="uploadImgs clear">
@@ -75,8 +75,7 @@
                 </div>
                 <div class="uploadBox appImg img2">
                   <div class="inputControll">
-                    <input class="uploadName" placeholder="Sub I
-                    mage">
+                    <input class="uploadName" placeholder="Sub Image">
                     <label for="subImage">SELECT IMAGE</label>
                     <input type="file" id="subImage" class="uploadHidden" name="app_sub">
                   </div>
@@ -144,8 +143,6 @@
           alert('서브 사진을 입력해 주세요!');
           return;
         }
-
-    
 
         document.app_form.submit();
       });

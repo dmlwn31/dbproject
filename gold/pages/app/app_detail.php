@@ -16,7 +16,7 @@
   $app_detail_cli=$app_row['GOLD_APP_cli'];
   $app_detail_reg=$app_row['GOLD_APP_reg'];
 
-  //echo $design_detail_tit, $design_detail_ser, $design_detail_des, $design_detail_img1, $design_detail_img2, $design_detail_thumb, $design_detail_cli, $design_detail_reg;
+  // //echo $design_detail_tit, $design_detail_ser, $design_detail_des, $design_detail_img1, $design_detail_img2, $design_detail_thumb, $design_detail_cli, $design_detail_reg;
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
     />
 
     <!-- light slider plugin link -->
-    <link rel="stylesheet" href="/gold/plugin/lightslider.css">
+    <link rel="stylesheet" href="/gold/plugin/lightslider.css" />
 
     <!-- main style css link -->
     <link rel="stylesheet" href="/gold/css/style.css" />
@@ -65,10 +65,10 @@
             </div>
             <!-- end of common title -->
 
-            <div class="detailCon">          
-             
+            <div class="detailCon">
+              
               <div class="appFramebox">
-                <ul id="appMain">
+                <ul id="appMain" class="appMain">
                   <li>
                     <img src="/gold/data/app_page/app_main/<?=$app_detail_img?>" alt="">
                   </li>
@@ -86,8 +86,8 @@
               </div>
 
               <div class="appStoreBtns">
-                <a href="#"><img src="/gold/img/app_store.png" alt=""></a>
-                <a href="#"><img src="/gold/img/google_play.png" alt=""></a>
+                <a href="#"><img src="/gold/img/app_store.jpg" alt=""></a>
+                <a href="#"><img src="/gold/img/google_play.jpg" alt=""></a>
               </div>
 
               <p class="detailInfo">
@@ -100,7 +100,33 @@
               </div>
             </div>
             <!-- end of web detail contents -->
+
+            <?php
+              if($userlevel != 1){
+              ?>
+              <input type="hidden">
+              <?php
+              } else {
+              ?>
+              <div class="productAdminBtns">
+                <button type="button" onclick="location.href='/gold/pages/admin/update_product.php?key=app_update_form&num=<?=$app_detail_num?>'">수정</button>
+                <button type="button" onclick="confirmDel()">삭제</button>
+              </div>
+              <?php
+              }
+              ?>
+
           </div>
+          <script>
+              function confirmDel(){
+                let confirmCheck = confirm('정말로 삭제하시겠습니까?')
+                if(confirmCheck == false){
+                  return false;
+                } else {
+                  location.href='/gold/php_process/pages/app_detail_delete.php?num=<?=$app_detail_num?>';
+                }            
+              }
+            </script>
           <!-- end of left box -->
           <div class="appRight deWeRight">
             
@@ -124,18 +150,24 @@
     <script src="/gold/js/custom.js"></script>
     <script src="/gold/js/web_detail.js"></script>
     <script>
-    $(function(){
-      //lightslider documentation : http://sachinchoolur.github.io/lightslider/examples.html
-      //lightslider 옵션 참조 : https://sseung-fire.tistory.com/18
-      $("#appMain").lightSlider({
-        loop:true,
-        keyPress:true,
-        item:1,
-        auto:true,
-        speed:500,
-        controls:false
+      $(function(){
+        //lightslider documentation : http://sachinchoolur.github.io/lightslider/examples.html
+        //lightslider 옵션 참조 : https://sseung-fire.tistory.com/18
+
+        $(".lSAction").empty();
+
+        $("#appMain").lightSlider({
+          loop:true,
+          keyPress:true,
+          item:1,
+          auto:true,
+          speed:500,
+          controls:false
+        }); 
       });
-   });
-  </script>
+    </script>
   </body>
 </html>
+
+
+

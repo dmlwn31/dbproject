@@ -6,7 +6,7 @@
 
   $qna_txt=nl2br($_POST['qnaTxt']);
   $qna_txt=addslashes($qna_txt);
-  
+
   $qna_reg=date("Y-m-d");
   $qna_hit=0;
 
@@ -26,13 +26,13 @@
     '$qna_txt',
     '$qna_reg',
     '$qna_hit'
-    )";
+  )";
 
-    mysqli_query($dbConn, $sql);
+  mysqli_query($dbConn, $sql);
 
-    echo "
-      <script>
-        location.href='/gold/pages/qna/qna.php';
-      </script>
-      ";
+  echo "
+    <script>
+      location.href='/gold/pages/qna/qna.php';
+    </script>
+  ";
 ?>

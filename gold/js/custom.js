@@ -1,6 +1,6 @@
 $(function(){
-  
-  //header top fix scrolling down
+
+  //header top fix when scrolling down
   const offTop = $(".gnb").offset().top;
   let fixHeader = function(){
     $(window).scroll(function(){
@@ -20,14 +20,14 @@ $(function(){
     fixHeader();
   });
 
-  //mobile menu click and show and hide menu 
+  //mobile menu click and show and hide menu
   $(".mobileMenu").click(function(){
     $(this).toggleClass("on");
     if($(this).hasClass("on")){
-      $(this).find("i").attr("class","fa fa-times");
+      $(this).find("i").attr("class", "fa fa-times");
       $(this).prev("ul").slideDown("fast");
     } else {
-      $(this).find("i").attr("class","fa fa-bars");
+      $(this).find("i").attr("class", "fa fa-bars");
       $(this).prev("ul").slideUp("fast");
     }
   });

@@ -11,9 +11,9 @@
   //database connect
   include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
   $sql="insert into gold_ans(
-  GOLD_ANS_QNA_num,
-  GOLD_ANS_con,
-  GOLD_ANS_reg   
+    GOLD_ANS_QNA_num,
+    GOLD_ANS_con,
+    GOLD_ANS_reg
   ) values(
     '$ans_qna_num',
     '$ans_con',
@@ -23,9 +23,9 @@
   mysqli_query($dbConn, $sql);
 
   echo "
-  <script>
-    alert('답변 등록이 완료되었습니다. ')
-    location.href='/gold/pages/qna/qna.php';
-  </script>
+    <script>
+      alert('답변 등록이 완료되었습니다.');
+      location.href='/gold/pages/qna/qna.php';
+    </script>
   ";
 ?>
