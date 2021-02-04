@@ -1,8 +1,8 @@
 <?php
-  $design_delete_num=$_GET['num'];
+  $app_delete_num=$_REQUEST['num'];
 
   include $_SERVER['DOCUMENT_ROOT']."/gold/php_process/connect/db_connect.php";
-  $sql="delete from gold_de where GOLD_DE_num=$design_delete_num";
+  $sql="delete from gold_app where 	GOLD_APP_num=$app_delete_num";
 
   mysqli_query($dbConn, $sql);
 
@@ -28,11 +28,10 @@
   //make json file
   file_put_contents($_SERVER['DOCUMENT_ROOT'].'/gold/data/json/app.json', json_encode($arr_result, JSON_PRETTY_PRINT));
 
-
   echo "
     <script>
       alert('삭제가 완료되었습니다.');
-      location.href='/gold/pages/design/design.php';
+      location.href='/gold/pages/app/app.php';
     </script>
   ";
 ?>

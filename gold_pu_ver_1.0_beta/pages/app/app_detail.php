@@ -98,10 +98,8 @@
                 <p><?=$app_detail_des?></p>
                 <a href="/gold/index.php#contact"><i class="fa fa-arrow-right"></i>Get In Touch With...</a>
               </div>
-            </div>
-            <!-- end of web detail contents -->
 
-            <?php
+              <?php
               if($userlevel != 1){
               ?>
               <input type="hidden">
@@ -115,9 +113,8 @@
               <?php
               }
               ?>
-
-          </div>
-          <script>
+            </div>
+            <script>
               function confirmDel(){
                 let confirmCheck = confirm('정말로 삭제하시겠습니까?')
                 if(confirmCheck == false){
@@ -127,6 +124,8 @@
                 }            
               }
             </script>
+            <!-- end of web detail contents -->
+          </div>
           <!-- end of left box -->
           <div class="appRight deWeRight">
             
